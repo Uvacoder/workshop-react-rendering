@@ -2,8 +2,6 @@
 
 Abstract TBA
 
-Trainer: __Andrei Pfeiffer__
-
 ## Content
 
 - TBA
