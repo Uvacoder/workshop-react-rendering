@@ -19,6 +19,8 @@ $ npm install
 $ npm start
 ```
 
+The app should start at the address `http://localhost:3000`. If you can see a table displayed, you're all set.
+
 ## What you need?
 
 Here's a list of things you need:
