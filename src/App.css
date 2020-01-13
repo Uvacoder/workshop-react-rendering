@@ -1,0 +1,9 @@
+table {
+  table-layout: auto;
+  border-collapse: collapse;
+}
+
+table td {
+  border: 1px black solid;
+  padding: 1em;
+}

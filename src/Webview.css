@@ -1,0 +1,13 @@
+iframe {
+  margin: 0 auto;
+}
+
+.webview {
+  border: 1px #dddddd solid;
+  overflow: scroll;
+}
+
+.webview-toolbar {
+  padding: 1em;
+  border-bottom: 1px #dddddd solid;
+}

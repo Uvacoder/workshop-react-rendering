@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding: 3em;
+}
+
+body,
+input,
+select,
+button {
+  font-family: "Courier New", Courier, monospace;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 1em;
+}
+
+label {
+  cursor: pointer;
+}
+
+hr {
+  border-style: solid;
+  border-bottom: 0;
+}
+
+button {
+  background-color: dodgerblue;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  box-shadow: 2px 2px 0 0 #cccccc;
+  transition: all 0.1s ease-in-out;
+  font-size: 1rem;
+}
+button:hover {
+  box-shadow: 0px 0px 0 0 #cccccc;
+  transform: translate(2px, 2px);
+}
+button:active {
+  background-color: royalblue;
+}
+button:focus {
+  outline: none;
+}
+button:focus-visible {
+  outline: 4px solid orange;
+}
+
+small {
+  color: #888888;
+}
