@@ -1,10 +1,9 @@
 # React Rendering Performance Optimizations (Advanced)
 
-It is said that React is "fast enough". This is very true for most applications.
+It is said that React is "fast enough". This is very true for most applications. However, rendering performance problems might occur in 2 different situations:
 
-However, rendering performance problems might occur in 2 different situations:
-1. we render many components or native elements, or
-2. we perform very frequent updates, during animations or gestures.
+* we render many components or native elements, or
+* we perform very frequent updates, during animations or gestures.
 
 We'll take an hands-on approach to identify performance problems, measure them using the React Profiler and we'll fix them using various optimization techniques such as __React.memo()__, __useMemo()__, __useCallback()__ and __useRef()__.
 
