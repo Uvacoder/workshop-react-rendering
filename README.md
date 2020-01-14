@@ -2,7 +2,9 @@
 
 It is said that React is "fast enough". This is very true for most applications.
 
-Rendering performance problems might occur in 2 different situations: we render many components or native elements, or we perform very frequent updates, during animations or gestures.
+However, rendering performance problems might occur in 2 different situations:
+1. we render many components or native elements, or
+2. we perform very frequent updates, during animations or gestures.
 
 We'll take an hands-on approach to identify performance problems, measure them using the React Profiler and we'll fix them using various optimization techniques such as __React.memo()__, __useMemo()__, __useCallback()__ and __useRef()__.
 
@@ -44,4 +46,4 @@ The app should start at the address `http://localhost:3000`. If you can see a ta
 
 You must have prior experience with React to attend this workshop.
 
-Being an advanced workshop, we __won't cover the basics__ of React: the syntax, what components are, what is state and how it works, component lifecycle, etc.
+Being an advanced workshop, we __won't cover the basics__ of React: the syntax, JSX, what components are, what is state and how it works, component lifecycle, etc.
