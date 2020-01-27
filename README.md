@@ -39,7 +39,7 @@ The app should start at the address `http://localhost:3000`. If you can see a ta
 1. laptop + power-plug
 2. code editor
 3. [Node.js](https://nodejs.org/en/download/) 10.0+ installed
-4. [React Profiler](https://reactjs.org/docs/optimizing-performance.html#profiling-components-with-the-devtools-profiler) installed
+4. [React DevTools](https://reactjs.org/docs/optimizing-performance.html#profiling-components-with-the-devtools-profiler) installed (as plugin for Chrome or Firefox)
 
 ## Who is this workshop for?
 
