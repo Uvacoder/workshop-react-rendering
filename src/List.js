@@ -1,16 +1,13 @@
 import React from "react";
 
+import { listReducer } from "./reducer";
 import Item from "./Item";
 
 function List({ items }) {
-  const [list, setList] = React.useState(items);
+  const [list, dispatch] = React.useReducer(listReducer, items);
 
   function increment(id) {
-    const index = list.findIndex(item => item.id === id);
-    const item = list[index];
-
-    list.splice(index, 1, { ...item, quantity: item.quantity + 1 });
-    setList([...list]);
+    dispatch({ type: "increment", id });
   }
 
   const optimizedIncrement = React.useCallback(increment, []);
@@ -19,7 +16,7 @@ function List({ items }) {
     <table>
       <thead>
         <tr>
-          <th>Product</th>
+          <th>Name</th>
           <th>Quantity</th>
         </tr>
       </thead>

@@ -13,11 +13,11 @@ function Item({ item, inc }) {
   return (
     <tr>
       <td>
-        {/* {item.product} */}
-        <Name depth={10} value={item.product} />
+        <Name depth={1} value={item.name} />
+        {isRegex ? "✅" : "🚫"}
+        <small>{item.description}</small>
       </td>
       <td>{item.quantity >= 10 ? "9+" : item.quantity}</td>
-      <td>{isRegex ? "true" : "false"}</td>
       <td>
         <button onClick={() => inc(item.id)}>+</button>
       </td>

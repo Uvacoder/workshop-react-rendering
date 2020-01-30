@@ -1,29 +1,33 @@
 import React from "react";
 
 function Name({ value, depth = 0 }) {
+  if (depth === 0) {
+    return <div>{value}</div>;
+  }
+
   const arr = String(value).split("");
 
   return (
-    <>
+    <div>
       {arr.map((letter, index) => {
         return (
           <React.Fragment key={index}>
-            <Letter component={letter} depth={depth} />
+            <Letter letter={letter} depth={depth - 1} />
           </React.Fragment>
         );
       })}
-    </>
+    </div>
   );
 }
 
-function Letter({ component, depth }) {
-  let result = <span>{component}</span>;
+function Letter({ letter, depth }) {
+  let result = <span>{letter}</span>;
 
   if (depth === 0) {
     return result;
   }
 
-  return <Letter component={result} depth={depth - 1} />;
+  return <Letter letter={result} depth={depth - 1} />;
 }
 
 export default React.memo(Name);
