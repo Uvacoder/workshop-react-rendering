@@ -72,6 +72,15 @@ ReactDOM.render(<App items={items} />, document.getElementById("root"));
  * ??? need to give them something to work on
  * 1. optimize Name component
  * 2. display max "9+" and optimize using custom memo function
+ * 
+ * profile in production
+ * - build for prod
+ * - start app -> see that it doesn't work
+ * - follow link
+ * - build for prod with profiling
+ * - start app -> profile
+ * 
+ * end with antibiotics analogy
  */
 
 //                             local variable   |   useState()   |   useRef()
