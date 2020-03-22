@@ -60,3 +60,12 @@ button:focus-visible {
 small {
   color: #888888;
 }
+
+.details {
+  border: 1px black dotted;
+  padding: 1em;
+}
+
+.item-selected {
+  background-color: beige;
+}

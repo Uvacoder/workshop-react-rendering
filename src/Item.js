@@ -1,7 +1,7 @@
 import React from "react";
 import Name from "./Name";
 
-function Item({ item, inc }) {
+function Item({ item, inc, select, selected }) {
   // const isRegex = testProblematicRegex(item.description);
 
   // create a memoized value
@@ -11,7 +11,7 @@ function Item({ item, inc }) {
   ]);
 
   return (
-    <tr>
+    <tr className={!!selected ? "item-selected" : ""}>
       <td>
         <Name depth={1} value={item.name} />
         {isRegex ? "✅" : "🚫"}
@@ -20,6 +20,7 @@ function Item({ item, inc }) {
       <td>{item.quantity >= 10 ? "9+" : item.quantity}</td>
       <td>
         <button onClick={() => inc(item.id)}>+</button>
+        <button onClick={() => select(item)}>></button>
       </td>
     </tr>
   );

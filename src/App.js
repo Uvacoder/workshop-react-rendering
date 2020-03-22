@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 
 import List from "./List";
 // import Webview from "./Webview";
 
 function App({ items }) {
-  const [toggled, setToggled] = useState(false);
+  const [toggled, setToggled] = React.useState(false);
 
-  const [clicks, setClicks] = useState(0);
+  const [clicks, setClicks] = React.useState(0);
   // const clicksRef = React.useRef(0);
   // let local = 0;
 
